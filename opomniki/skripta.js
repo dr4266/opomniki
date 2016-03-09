@@ -21,7 +21,7 @@ window.addEventListener('load', function() {
 	var izvediPrijavo = function(event) {
 		var uporabnik = document.querySelector("#uporabnisko_ime").value;
 		document.getElementById("uporabnik").innerHTML = uporabnik;
-		document.getElementsByClassName("pokrivalo").item(0).style.opacity = "0";
+		document.querySelector(".pokrivalo").style.visibility = "hidden";
 	}
 	document.querySelector("#prijavniGumb").addEventListener('click', izvediPrijavo);
 	
